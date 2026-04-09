@@ -22,7 +22,8 @@ struct Calc{
 void Calculator(struct Calc *this, int num1, int num2){
     int result = 0;
 
-    result= (*this).fp(num1, num2);
+    // result= (*this).fp(num1, num2);
+    result= this->fp(num1, num2);
     printf("result = %d\n", result);
 }
 
